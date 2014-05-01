@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLUIAElement.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLUIAElement</TokenIdentifier>
+			<Abstract type="html">SLUIAElement is an abstract class that defines an interface to
+access and manipulate a user interface element within your application.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLUIAElement/setDefaultTimeout:</TokenIdentifier>
+			<Abstract type="html">Establishes the value of the grace period during which instances SLUIAElement
+wait to establish access to their corresponding interface elements.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/SLUIAElement/defaultTimeout</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (void)setDefaultTimeout:(NSTimeInterval)timeout</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>timeout</Name>
+					<Abstract type="html">The new value of the &quot;grace period&quot; that instances of SLUIAElement use
+to establish access to their corresponding interface elements.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDefaultTimeout:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLUIAElement/defaultTimeout</TokenIdentifier>
+			<Abstract type="html">The value of the grace period during which instances of SLUIAElement
+wait to establish access to their corresponding interface elements.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/SLUIAElement/setDefaultTimeout:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isValid</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isTappable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (NSTimeInterval)defaultTimeout</Declaration>
+			
+			<ReturnValue><Abstract type="html">The value of the grace period that instances of SLUIAElement use
+to establish access to their corresponding interface elements.</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultTimeout</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isValid</TokenIdentifier>
+			<Abstract type="html">Determines whether a user interface element matching the specified SLUIAElement
+currently exists.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isTappable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)isValid</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if a matching element currently exists, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isVisible</TokenIdentifier>
+			<Abstract type="html">Determines whether the specified element is visible on the screen.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isVisible</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the user interface element represented by the specified element
+is visible on-screen, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/isVisible</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isValidAndVisible</TokenIdentifier>
+			<Abstract type="html">Determines whether the specified element is valid, and if so, if it is visible
+on the screen.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValidAndVisible</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the user interface element represented by the specified element
+both exists and is visible, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/isValidAndVisible</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isInvalidOrInvisible</TokenIdentifier>
+			<Abstract type="html">Determines whether the specified element is invalid or, if it is valid,
+if it is invisible.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isInvalidOrInvisible</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the user interface element represented by the specified element
+does not exist or is invisible, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/isInvalidOrInvisible</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isEnabled</TokenIdentifier>
+			<Abstract type="html">Determines whether the specified element is enabled.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the user interface element represented by the specified element
+is enabled, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/isEnabled</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isTappable</TokenIdentifier>
+			<Abstract type="html">Determines whether it is possible to interact with the specified element.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/isValid</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)isTappable</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if it is possible to tap on or otherwise interact with the user
+interface element represented by the specified element, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/isTappable</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/hasKeyboardFocus</TokenIdentifier>
+			<Abstract type="html">Determines whether the specified element currently receives keyboard input.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)hasKeyboardFocus</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the user interface element represented by the specified element
+is the current receiver of keyboard input, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/hasKeyboardFocus</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/tap</TokenIdentifier>
+			<Abstract type="html">Taps the specified element.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (void)tap</Declaration>
+			
+			
+			<Anchor>//api/name/tap</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/doubleTap</TokenIdentifier>
+			<Abstract type="html">Double-taps the specified element.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (void)doubleTap</Declaration>
+			
+			
+			<Anchor>//api/name/doubleTap</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/touchAndHoldWithDuration:</TokenIdentifier>
+			<Abstract type="html">Touches and holds the specified element.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (void)touchAndHoldWithDuration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration for the touch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/touchAndHoldWithDuration:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/dragWithStartOffset:endOffset:</TokenIdentifier>
+			<Abstract type="html">Drags within the bounds of the specified element.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (void)dragWithStartOffset:(CGPoint)startOffset endOffset:(CGPoint)endOffset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>startOffset</Name>
+					<Abstract type="html">The offset, within the element&apos;s rect, at which to begin
+dragging.</Abstract>
+				</Parameter><Parameter>
+					<Name>endOffset</Name>
+					<Abstract type="html">The offset, within the element&apos;s rect, at which to end dragging.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/dragWithStartOffset:endOffset:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/scrollToVisible</TokenIdentifier>
+			<Abstract type="html">If this element has a UIScrollView or UIWebview ancestor, then that ancestor will be
+scrolled until this element is visible.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (void)scrollToVisible</Declaration>
+			
+			
+			<Anchor>//api/name/scrollToVisible</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/label</TokenIdentifier>
+			<Abstract type="html">Returns the element&apos;s label.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)label</Declaration>
+			
+			<ReturnValue><Abstract type="html">The accessibility label of the user interface element represented by
+the specified element.</Abstract></ReturnValue>
+			<Anchor>//api/name/label</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/value</TokenIdentifier>
+			<Abstract type="html">Returns the element&apos;s value.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)value</Declaration>
+			
+			<ReturnValue><Abstract type="html">The accessibility value of the user interface element represented by
+the specified element.</Abstract></ReturnValue>
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/hitpoint</TokenIdentifier>
+			<Abstract type="html">Returns the screen position to tap for the element.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)hitpoint</Declaration>
+			
+			<ReturnValue><Abstract type="html">The position to tap for the user interface element represented by the
+specified element, in screen coordinates, or SLCGPointNull if such a position
+cannot be determined.</Abstract></ReturnValue>
+			<Anchor>//api/name/hitpoint</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/rect</TokenIdentifier>
+			<Abstract type="html">Returns the location and size of the object.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (CGRect)rect</Declaration>
+			
+			<ReturnValue><Abstract type="html">The accessibility frame of the user interface element represented by
+the specified element.</Abstract></ReturnValue>
+			<Anchor>//api/name/rect</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/logElement</TokenIdentifier>
+			<Abstract type="html">Logs information about the specified element.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (void)logElement</Declaration>
+			
+			
+			<Anchor>//api/name/logElement</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/logElementTree</TokenIdentifier>
+			<Abstract type="html">Logs information about the element hierarchy rooted in the specified
+element.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (void)logElementTree</Declaration>
+			
+			
+			<Anchor>//api/name/logElementTree</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/captureScreenshotWithFilename:</TokenIdentifier>
+			<Abstract type="html">Takes a screenshot of the specified element.</Abstract>
+			<DeclaredIn>SLUIAElement.h</DeclaredIn>
+			
+			<Declaration>- (void)captureScreenshotWithFilename:(NSString *)filename</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filename</Name>
+					<Abstract type="html">An optional string to use as the name for the resultant image file (provide nil to use a generic name.).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/captureScreenshotWithFilename:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/waitUntilTappable:thenSendMessage:</TokenIdentifier>
+			<Abstract type="html">Forwards an action message to the UIAElement corresponding to the
+specified element and returns the result.</Abstract>
+			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
+			
+			<Declaration>- (id)waitUntilTappable:(BOOL)waitUntilTappable thenSendMessage:(NSString *)action, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>waitUntilTappable</Name>
+					<Abstract type="html">If YES, and canDetermineTappability returns YES,
+this method will wait for the remainder of the default timeout, after the element
+becomes valid, for the element to become tappable.</Abstract>
+				</Parameter><Parameter>
+					<Name>action</Name>
+					<Abstract type="html">A format string (in the manner of [NSString stringWithFormat:])
+representing a JavaScript function to be called on the corresponding UIAElement.</Abstract>
+				</Parameter><Parameter>
+					<Name>...</Name>
+					<Abstract type="html">(Optional) A comma-separated list of arguments to substitute into
+action.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value returned by the function, as an Objective-C object. See
+[SLTerminal eval:] for more infomation.</Abstract></ReturnValue>
+			<Anchor>//api/name/waitUntilTappable:thenSendMessage:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/waitUntilTappable:thenPerformActionWithUIARepresentation:timeout:</TokenIdentifier>
+			<Abstract type="html">Provides access to the UIAutomation representation of the specified element
+within a specified block.</Abstract>
+			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
+			
+			<Declaration>- (void)waitUntilTappable:(BOOL)waitUntilTappable thenPerformActionWithUIARepresentation:(void ( ^ ) ( NSString *UIARepresentation ))block timeout:(NSTimeInterval)timeout</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>waitUntilTappable</Name>
+					<Abstract type="html">If YES, and canDetermineTappability returns YES,
+this method will wait for the remainder of timeout, after the element becomes valid,
+for the element to become tappable.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block which takes the UIAutomation representation of the specified
+element as an argument and returns void.</Abstract>
+				</Parameter><Parameter>
+					<Name>timeout</Name>
+					<Abstract type="html">The timeout for which this method should wait for the specified
+element to become valid (and tappable, if waitUntilTappable is YES). Clients
+should generally call this method with [SLUIAElement defaultTimeout].</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/waitUntilTappable:thenPerformActionWithUIARepresentation:timeout:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLUIAElement/SLElementIsTappableFunctionName</TokenIdentifier>
+			<Abstract type="html">Returns the name of the JavaScript function used to evaluate whether a
+UIAElement is tappable, loading it into the terminal&apos;s namespace if necessary.</Abstract>
+			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)SLElementIsTappableFunctionName</Declaration>
+			
+			<ReturnValue><Abstract type="html">The name of the JavaScript function used to evaluate whether a
+UIAElement is tappable.</Abstract></ReturnValue>
+			<Anchor>//api/name/SLElementIsTappableFunctionName</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLUIAElement/canDetermineTappability</TokenIdentifier>
+			<Abstract type="html">Determines whether the specified element&apos;s response to isTappable is valid.</Abstract>
+			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)canDetermineTappability</Declaration>
+			
+			
+			<Anchor>//api/name/canDetermineTappability</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

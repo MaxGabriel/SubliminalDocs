@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLTerminal.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLTerminal</TokenIdentifier>
+			<Abstract type="html">The singleton SLTerminal instance communicates with the Automation instrument
+in order to evaluate arbitrary JavaScript, in particular scripts which
+call APIs defined by the UIAutomation JavaScript framework.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLTerminal/sharedTerminal</TokenIdentifier>
+			<Abstract type="html">Returns the terminal.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>+ (SLTerminal *)sharedTerminal</Declaration>
+			
+			<ReturnValue><Abstract type="html">The shared SLTerminal instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedTerminal</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/eval:</TokenIdentifier>
+			<Abstract type="html">Evaluates the specified JavaScript script within UIAutomation and returns the
+result as an Objective-C object.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>- (id)eval:(NSString *)script</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>script</Name>
+					<Abstract type="html">The script to evaluate. May be a JavaScript expression, statement,
+or sequence of statements. This value must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value of the last expression evaluated, as an Objective-C object:
+
+- If the value is of type &quot;string&quot;, -eval: will return an NSString *
+that is equal to the value.
+- If the value is of type &quot;boolean&quot;, -eval: will return an NSNumber * whose
+-boolValue is equal to the value.
+- If the value is of type &quot;number&quot;, -eval: will return an NSNumber * whose
+primitive value (using an accessor appropriate to the value&apos;s format) is equal
+to the value.
+- Otherwise, -eval: will return nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/eval:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/evalWithFormat:</TokenIdentifier>
+			<Abstract type="html">Evaluates the specified JavaScript script after substituting the specified argument
+variables into the script.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>- (id)evalWithFormat:(NSString *)script, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>script</Name>
+					<Abstract type="html">A format string (in the manner of [NSString stringWithFormat:])
+to be evaluated as JavaScript after formatting. This value must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>...</Name>
+					<Abstract type="html">(Optional) A comma-separated list of arguments to substitute into script.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value of the last expression evaluated, as an Objective-C object.
+See eval: for more information.</Abstract></ReturnValue>
+			<Anchor>//api/name/evalWithFormat:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/setScriptLoggingEnabled:</TokenIdentifier>
+			<Abstract type="html">Determines whether the terminal will log scripts as it evaluates them.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL scriptLoggingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/scriptLoggingEnabled</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/scriptLoggingEnabled</TokenIdentifier>
+			<Abstract type="html">Determines whether the terminal will log scripts as it evaluates them.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL scriptLoggingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/scriptLoggingEnabled</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTerminal/scriptLoggingEnabled</TokenIdentifier>
+			<Abstract type="html">Determines whether the terminal will log scripts as it evaluates them.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL scriptLoggingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/scriptLoggingEnabled</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/loadFunctionWithName:params:body:</TokenIdentifier>
+			<Abstract type="html">Adds the JavaScript function with the specified description to the terminal&apos;s
+namespace.</Abstract>
+			<DeclaredIn>SLTerminal+ConvenienceFunctions.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/evalFunctionWithName:withArgs:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/evalFunctionWithName:params:body:withArgs:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)loadFunctionWithName:(NSString *)name params:(NSArray *)params body:(NSString *)body</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">The string names of the parameters of the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The body of the function: one or more statements, with no function
+closure.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loadFunctionWithName:params:body:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/evalFunctionWithName:withArgs:</TokenIdentifier>
+			<Abstract type="html">Evaluates a JavaScript function existing in the terminal&apos;s namespace
+with the given arguments and returns the result, if any.</Abstract>
+			<DeclaredIn>SLTerminal+ConvenienceFunctions.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/loadFunctionWithName:params:body:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/evalFunctionWithName:params:body:withArgs:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSString *)evalFunctionWithName:(NSString *)name withArgs:(NSArray *)args</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of a function previously added to the terminal&apos;s namespace.</Abstract>
+				</Parameter><Parameter>
+					<Name>args</Name>
+					<Abstract type="html">The arguments to the function, as strings.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The result of evaluating the specified function, or nil if the function
+does not return a value.</Abstract></ReturnValue>
+			<Anchor>//api/name/evalFunctionWithName:withArgs:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/evalFunctionWithName:params:body:withArgs:</TokenIdentifier>
+			<Abstract type="html">Adds the JavaScript function with the specified description to the terminal&apos;s
+namespace, if necessary; evaluates it with the given arguments; and returns
+the result, if any.</Abstract>
+			<DeclaredIn>SLTerminal+ConvenienceFunctions.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/loadFunctionWithName:params:body:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/evalFunctionWithName:withArgs:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSString *)evalFunctionWithName:(NSString *)name params:(NSArray *)params body:(NSString *)body withArgs:(NSArray *)args</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the function to add to the terminal&apos;s namespace, if necessary.</Abstract>
+				</Parameter><Parameter>
+					<Name>params</Name>
+					<Abstract type="html">The string names of the parameters of the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The body of the function: one or more statements, with no function closure.</Abstract>
+				</Parameter><Parameter>
+					<Name>args</Name>
+					<Abstract type="html">The arguments to the function, as strings.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The result of evaluating the specified function, or nil if the function
+does not return a value.</Abstract></ReturnValue>
+			<Anchor>//api/name/evalFunctionWithName:params:body:withArgs:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/waitUntilTrue:retryDelay:timeout:</TokenIdentifier>
+			<Abstract type="html">Waits for an arbitrary JavaScript expression to evaluate to true
+within a specified timeout.</Abstract>
+			<DeclaredIn>SLTerminal+ConvenienceFunctions.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/waitUntilFunctionWithNameIsTrue:whenEvaluatedWithArgs:retryDelay:timeout:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)waitUntilTrue:(NSString *)condition retryDelay:(NSTimeInterval)retryDelay timeout:(NSTimeInterval)timeout</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>condition</Name>
+					<Abstract type="html">A boolean expression in JavaScript, on whose truth the method
+should wait.</Abstract>
+				</Parameter><Parameter>
+					<Name>retryDelay</Name>
+					<Abstract type="html">The interval at which to re-evaluate condition.</Abstract>
+				</Parameter><Parameter>
+					<Name>timeout</Name>
+					<Abstract type="html">The interval for which to wait.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if and when the expression evaluates to true within the timeout;
+otherwise, NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/waitUntilTrue:retryDelay:timeout:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/waitUntilFunctionWithNameIsTrue:whenEvaluatedWithArgs:retryDelay:timeout:</TokenIdentifier>
+			<Abstract type="html">Waits for a JavaScript function existing in the terminal&apos;s namespace
+to evaluate to true, given the specified arguments, within a specified timeout.</Abstract>
+			<DeclaredIn>SLTerminal+ConvenienceFunctions.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)waitUntilFunctionWithNameIsTrue:(NSString *)name whenEvaluatedWithArgs:(NSArray *)args retryDelay:(NSTimeInterval)retryDelay timeout:(NSTimeInterval)timeout</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of a function previously added to the terminal&apos;s namespace.</Abstract>
+				</Parameter><Parameter>
+					<Name>args</Name>
+					<Abstract type="html">The arguments to the function, as strings.</Abstract>
+				</Parameter><Parameter>
+					<Name>retryDelay</Name>
+					<Abstract type="html">The interval at which to re-evaluate the function.</Abstract>
+				</Parameter><Parameter>
+					<Name>timeout</Name>
+					<Abstract type="html">The interval for which to wait.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if and when the function evaluates to true within the timeout;
+otherwise, NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/waitUntilFunctionWithNameIsTrue:whenEvaluatedWithArgs:retryDelay:timeout:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/setScriptNamespace:</TokenIdentifier>
+			<Abstract type="html">The namespace (in SLTerminal.js) in which the SLTerminal defines variables.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *scriptNamespace</Declaration>
+			
+			
+			<Anchor>//api/name/scriptNamespace</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/scriptNamespace</TokenIdentifier>
+			<Abstract type="html">The namespace (in SLTerminal.js) in which the SLTerminal defines variables.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *scriptNamespace</Declaration>
+			
+			
+			<Anchor>//api/name/scriptNamespace</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTerminal/scriptNamespace</TokenIdentifier>
+			<Abstract type="html">The namespace (in SLTerminal.js) in which the SLTerminal defines variables.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *scriptNamespace</Declaration>
+			
+			
+			<Anchor>//api/name/scriptNamespace</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/setEvalQueue:</TokenIdentifier>
+			<Abstract type="html">The serial queue on which the receiver evaluates all JavaScript.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) dispatch_queue_t evalQueue</Declaration>
+			
+			
+			<Anchor>//api/name/evalQueue</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/evalQueue</TokenIdentifier>
+			<Abstract type="html">The serial queue on which the receiver evaluates all JavaScript.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) dispatch_queue_t evalQueue</Declaration>
+			
+			
+			<Anchor>//api/name/evalQueue</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTerminal/evalQueue</TokenIdentifier>
+			<Abstract type="html">The serial queue on which the receiver evaluates all JavaScript.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) dispatch_queue_t evalQueue</Declaration>
+			
+			
+			<Anchor>//api/name/evalQueue</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/currentQueueIsEvalQueue</TokenIdentifier>
+			<Abstract type="html">Whether or not the current queue is the evalQueue.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)currentQueueIsEvalQueue</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether or not the current queue is the evalQueue.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentQueueIsEvalQueue</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/shutDown</TokenIdentifier>
+			<Abstract type="html">Causes SLTerminal.js to finish evaluating commands.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>- (void)shutDown</Declaration>
+			
+			
+			<Anchor>//api/name/shutDown</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

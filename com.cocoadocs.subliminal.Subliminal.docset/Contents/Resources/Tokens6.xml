@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLElement.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLElement</TokenIdentifier>
+			<Abstract type="html">Instances of SLElement allow you to access and manipulate user interface
+elements that match criteria such as having certain accessible values
+or being of a particular type of control.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLElement/elementWithAccessibilityLabel:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an element that matches objects in the accessibility hierarchy
+with the specified accessibility label.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)elementWithAccessibilityLabel:(NSString *)label</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>label</Name>
+					<Abstract type="html">A label that identifies a matching object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created element that matches objects in the accessibility
+hierarchy with the specified accessibility label.</Abstract></ReturnValue>
+			<Anchor>//api/name/elementWithAccessibilityLabel:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLElement/elementWithAccessibilityLabel:value:traits:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an element that matches objects in the accessibility hierarchy
+with the specified accessibility label, value, and/or traits.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)elementWithAccessibilityLabel:(NSString *)label value:(NSString *)value traits:(UIAccessibilityTraits)traits</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>label</Name>
+					<Abstract type="html">A label that identifies a matching object.
+If this is nil, the element does not restrict matches by label.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value of a matching object.
+If this is nil, the element does not restrict matches by value.</Abstract>
+				</Parameter><Parameter>
+					<Name>traits</Name>
+					<Abstract type="html">The combination of accessibility traits that characterize a
+matching object. If this is SLUIAccessibilityTraitAny, the element does not
+restrict matches by trait.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/elementWithAccessibilityLabel:value:traits:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLElement/elementWithAccessibilityIdentifier:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an element that matches objects in the accessibility hierarchy
+with the specified accessibility identifier.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)elementWithAccessibilityIdentifier:(NSString *)identifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">A string that uniquely identifies a matching object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created element that matches objects in the accessibility
+hierarchy with the specified accessibility identifier.</Abstract></ReturnValue>
+			<Anchor>//api/name/elementWithAccessibilityIdentifier:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLElement/elementMatching:withDescription:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an element that evaluates the accessibility hierarchy
+using a specified block object.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/SLElement/elementWithAccessibilityIdentifier:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (instancetype)elementMatching:(BOOL ( ^ ) ( NSObject *obj ))predicate withDescription:(NSString *)description</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>predicate</Name>
+					<Abstract type="html">The block used to evaluate objects within the accessibility
+hierarchy. The block will be evaluated on the main thread. The block should
+return YES if the element matches the object, otherwise NO.</Abstract>
+				</Parameter><Parameter>
+					<Name>description</Name>
+					<Abstract type="html">An optional description of the element, for use in debugging.
+(The other SLElement constructors derive element descriptions from their arguments.)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created element that evaluates objects using predicate.</Abstract></ReturnValue>
+			<Anchor>//api/name/elementMatching:withDescription:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLElement/anyElement</TokenIdentifier>
+			<Abstract type="html">Creates and returns an element that matches any object in the accessibility hierarchy.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)anyElement</Declaration>
+			
+			<ReturnValue><Abstract type="html">A newly created element that matches any object in the accessibility hierarchy.</Abstract></ReturnValue>
+			<Anchor>//api/name/anyElement</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLElement/tapAtActivationPoint</TokenIdentifier>
+			<Abstract type="html">Taps the specified element at its activation point.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+			<Declaration>- (void)tapAtActivationPoint</Declaration>
+			
+			
+			<Anchor>//api/name/tapAtActivationPoint</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLElement/logElement</TokenIdentifier>
+			<Abstract type="html">Logs information about the specified element.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+			<Declaration>- (void)logElement</Declaration>
+			
+			
+			<Anchor>//api/name/logElement</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLElement/setShouldDoubleCheckValidity:</TokenIdentifier>
+			<Abstract type="html">Determines whether the specified element should use UIAutomation to confirm that it is valid
+after Subliminal has determined (to the best of its ability) that it is valid.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldDoubleCheckValidity</Declaration>
+			
+			
+			<Anchor>//api/name/shouldDoubleCheckValidity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLElement/shouldDoubleCheckValidity</TokenIdentifier>
+			<Abstract type="html">Determines whether the specified element should use UIAutomation to confirm that it is valid
+after Subliminal has determined (to the best of its ability) that it is valid.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldDoubleCheckValidity</Declaration>
+			
+			
+			<Anchor>//api/name/shouldDoubleCheckValidity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLElement/shouldDoubleCheckValidity</TokenIdentifier>
+			<Abstract type="html">Determines whether the specified element should use UIAutomation to confirm that it is valid
+after Subliminal has determined (to the best of its ability) that it is valid.</Abstract>
+			<DeclaredIn>SLElement.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldDoubleCheckValidity</Declaration>
+			
+			
+			<Anchor>//api/name/shouldDoubleCheckValidity</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLElement/matchesObject:</TokenIdentifier>
+			<Abstract type="html">Determines if the specified element matches the specified object.</Abstract>
+			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)matchesObject:(NSObject *)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to which the instance of SLElement should be compared.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified element matches object, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/matchesObject:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLElement/examineMatchingObject:</TokenIdentifier>
+			<Abstract type="html">Allows the caller to interact with the actual object matched by the specified
+SLElement.</Abstract>
+			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
+			
+			<Declaration>- (void)examineMatchingObject:(void ( ^ ) ( NSObject *object ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block which takes the matching object as an argument and returns
+void.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/examineMatchingObject:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

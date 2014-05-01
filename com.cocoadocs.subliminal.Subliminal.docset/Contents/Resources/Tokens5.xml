@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLDevice.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLDevice</TokenIdentifier>
+			<Abstract type="html">The singleton SLDevice instance allows you to access and manipulate
+the device on which your application is running.</Abstract>
+			<DeclaredIn>SLDevice.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLDevice/currentDevice</TokenIdentifier>
+			<Abstract type="html">Returns an object representing the current device.</Abstract>
+			<DeclaredIn>SLDevice.h</DeclaredIn>
+			
+			<Declaration>+ (SLDevice *)currentDevice</Declaration>
+			
+			<ReturnValue><Abstract type="html">A singleton object that represents the current device.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentDevice</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLDevice/deactivateAppForDuration:</TokenIdentifier>
+			<Abstract type="html">Deactivates your application for the specified duration.</Abstract>
+			<DeclaredIn>SLDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)deactivateAppForDuration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The time, in seconds, for the app to remain inactive
+(subject to the caveat in the discussion).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deactivateAppForDuration:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLDevice/setOrientation:</TokenIdentifier>
+			<Abstract type="html">Changes the device orientation to the specified new deviceOrientation value.</Abstract>
+			<DeclaredIn>SLDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)setOrientation:(UIDeviceOrientation)deviceOrientation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviceOrientation</Name>
+					<Abstract type="html">The device orientation to rotate to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOrientation:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLDevice/captureScreenshotWithFilename:</TokenIdentifier>
+			<Abstract type="html">Takes a screenshot of the entire device screen.</Abstract>
+			<DeclaredIn>SLDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)captureScreenshotWithFilename:(NSString *)filename</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filename</Name>
+					<Abstract type="html">A string to use as the name for the resultant image file.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/captureScreenshotWithFilename:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLDevice/captureScreenshotWithFilename:inRect:</TokenIdentifier>
+			<Abstract type="html">Takes a screenshot of the specified rectangular portion of the device screen.</Abstract>
+			<DeclaredIn>SLDevice.h</DeclaredIn>
+			
+			<Declaration>- (void)captureScreenshotWithFilename:(NSString *)filename inRect:(CGRect)rect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filename</Name>
+					<Abstract type="html">A string to use as the name for the resultant image file.</Abstract>
+				</Parameter><Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">The rect that defines the area of the screen to capture.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/captureScreenshotWithFilename:inRect:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

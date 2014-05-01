@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLTextView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLTextView</TokenIdentifier>
+			<Abstract type="html">SLTextView matches instances of UITextView.</Abstract>
+			<DeclaredIn>SLTextView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextView/setText:</TokenIdentifier>
+			<Abstract type="html">The text displayed by the text view.</Abstract>
+			<DeclaredIn>SLTextView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextView/text</TokenIdentifier>
+			<Abstract type="html">The text displayed by the text view.</Abstract>
+			<DeclaredIn>SLTextView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTextView/text</TokenIdentifier>
+			<Abstract type="html">The text displayed by the text view.</Abstract>
+			<DeclaredIn>SLTextView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextView/setText:withKeyboard:</TokenIdentifier>
+			<Abstract type="html">Type the text in the text view with a specific keyboard.</Abstract>
+			<DeclaredIn>SLTextView.h</DeclaredIn>
+			
+			<Declaration>- (void)setText:(NSString *)text withKeyboard:(id&lt;SLKeyboard&gt;)keyboard</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">A string to type into the text view.</Abstract>
+				</Parameter><Parameter>
+					<Name>keyboard</Name>
+					<Abstract type="html">An SLElement that implements the SLKeyboard protocol,
+to be used to type the given string.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setText:withKeyboard:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextView/setDefaultKeyboard:</TokenIdentifier>
+			<Abstract type="html">The default keyboard to be used by setText: and setText:withKeyboard:.</Abstract>
+			<DeclaredIn>SLTextView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) id&lt;SLKeyboard&gt; defaultKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/defaultKeyboard</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextView/defaultKeyboard</TokenIdentifier>
+			<Abstract type="html">The default keyboard to be used by setText: and setText:withKeyboard:.</Abstract>
+			<DeclaredIn>SLTextView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) id&lt;SLKeyboard&gt; defaultKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/defaultKeyboard</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTextView/defaultKeyboard</TokenIdentifier>
+			<Abstract type="html">The default keyboard to be used by setText: and setText:withKeyboard:.</Abstract>
+			<DeclaredIn>SLTextView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) id&lt;SLKeyboard&gt; defaultKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/defaultKeyboard</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

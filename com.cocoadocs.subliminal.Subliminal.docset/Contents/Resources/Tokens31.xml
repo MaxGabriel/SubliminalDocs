@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/SLAlertTextFieldType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/SLAlertTextFieldType</TokenIdentifier>
+			<Abstract type="html">Types of textfields contained by UIAlertViews, as determined by the
+alert view&apos;s alertViewStyle.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SLAlertTextFieldTypeSecureText</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SLAlertTextFieldTypeSecureText</Declaration>
+            
+            <DeclaredIn>SLAlert.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SLAlertTextFieldTypePlainText</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SLAlertTextFieldTypePlainText</Declaration>
+            
+            <DeclaredIn>SLAlert.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SLAlertTextFieldTypeLogin</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SLAlertTextFieldTypeLogin</Declaration>
+            
+            <DeclaredIn>SLAlert.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/SLAlertTextFieldTypePassword</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>SLAlertTextFieldTypePassword</Declaration>
+            
+            <DeclaredIn>SLAlert.h</DeclaredIn>
+            
+            <NodeRef refid="31"/>
+        </Token>
+        
+	</File>
+</Tokens>

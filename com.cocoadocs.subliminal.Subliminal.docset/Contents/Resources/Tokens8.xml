@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLKeyboardKey.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLKeyboardKey</TokenIdentifier>
+			<Abstract type="html">Instances of SLKeyboardKey refer to individual keys on the application&apos;s keyboard.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLKeyboardKey/elementWithAccessibilityLabel:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an element which represents the keyboard key with the specified label.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)elementWithAccessibilityLabel:(NSString *)label</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>label</Name>
+					<Abstract type="html">The key&apos;s accessibility label.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created element representing the keyboard key with the specified label.</Abstract></ReturnValue>
+			<Anchor>//api/name/elementWithAccessibilityLabel:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

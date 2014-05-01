@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLAlertHandler.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLAlertHandler</TokenIdentifier>
+			<Abstract type="html">The &quot;dismiss&quot; methods of SLAlert vend instances of SLAlertHandler
+that can dismiss corresponding alerts when they appear,
+and report the status of dismissal to the tests.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/addHandler:</TokenIdentifier>
+			<Abstract type="html">Allows tests to manually handle particular alerts.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>+ (void)addHandler:(SLAlertHandler *)handler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>handler</Name>
+					<Abstract type="html">An alert handler.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addHandler:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/removeHandler:</TokenIdentifier>
+			<Abstract type="html">Removes the specified handler from the queue of SLAlertHandlers given a
+chance to handle (dismiss) an alert when it is shown.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>+ (void)removeHandler:(SLAlertHandler *)handler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>handler</Name>
+					<Abstract type="html">An alert handler to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeHandler:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLAlertHandler/didHandleAlert</TokenIdentifier>
+			<Abstract type="html">Returns YES if the receiver has dismissed an alert, NO otherwise.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/addHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)didHandleAlert</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the receiver has dismissed an alert, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/didHandleAlert</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLAlertHandler/andThen:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an alert handler which handles a corresponding alert
+by performing the action of the receiver and then that of the specified handler.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>- (SLAlertHandler *)andThen:(SLAlertHandler *)nextHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nextHandler</Name>
+					<Abstract type="html">A handler whose action should be performed after the action
+of the receiver.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created alert handler that performs the action of the receiver
+and then the action of nextHandler.</Abstract></ReturnValue>
+			<Anchor>//api/name/andThen:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/loadUIAAlertHandling</TokenIdentifier>
+			<Abstract type="html">Loads Subliminal&apos;s alert-handling mechanism into UIAutomation.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>+ (void)loadUIAAlertHandling</Declaration>
+			
+			
+			<Anchor>//api/name/loadUIAAlertHandling</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/setLoggingEnabled:</TokenIdentifier>
+			<Abstract type="html">Enables or disables alert-handling logging.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>+ (void)setLoggingEnabled:(BOOL)enableLogging</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enableLogging</Name>
+					<Abstract type="html">If YES, alert-handling logging is enabled;
+otherwise, alert-handling logging is disabled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLoggingEnabled:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/loggingEnabled</TokenIdentifier>
+			<Abstract type="html">Returns YES if Subliminal should log alerts as they are handled.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/setLoggingEnabled:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)loggingEnabled</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if alert-handling logging is enabled, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/loggingEnabled</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

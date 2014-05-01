@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLTestController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLTestController</TokenIdentifier>
+			<Abstract type="html">SLTestController coordinates test execution. Its singleton instance
+is the primary interface between the application and the tests.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/setDefaultTimeout:</TokenIdentifier>
+			<Abstract type="html">Subliminal&apos;s timeout.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval defaultTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/defaultTimeout</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/defaultTimeout</TokenIdentifier>
+			<Abstract type="html">Subliminal&apos;s timeout.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval defaultTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/defaultTimeout</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTestController/defaultTimeout</TokenIdentifier>
+			<Abstract type="html">Subliminal&apos;s timeout.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSTimeInterval defaultTimeout</Declaration>
+			
+			
+			<Anchor>//api/name/defaultTimeout</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLTestController/sharedTestController</TokenIdentifier>
+			<Abstract type="html">Returns the test controller.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)sharedTestController</Declaration>
+			
+			<ReturnValue><Abstract type="html">The shared SLTestController instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedTestController</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/runTests:withCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">Run the specified tests by invoking runTests:usingSeed:withCompletionBlock:
+with SLTestControllerRandomSeed and the specified completion block.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>- (void)runTests:(NSSet *)tests withCompletionBlock:(void ( ^ ) ( ))completionBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tests</Name>
+					<Abstract type="html">The set of tests to run.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionBlock</Name>
+					<Abstract type="html">An optional block to execute once testing has finished.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/runTests:withCompletionBlock:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/runTests:usingSeed:withCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">Runs the specified tests.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>- (void)runTests:(NSSet *)tests usingSeed:(unsigned int)seed withCompletionBlock:(void ( ^ ) ( ))completionBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tests</Name>
+					<Abstract type="html">The set of tests to run.</Abstract>
+				</Parameter><Parameter>
+					<Name>seed</Name>
+					<Abstract type="html">The seed to use to randomize the tests.
+If SLTestControllerRandomSeed is passed, the test controller will choose a seed.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionBlock</Name>
+					<Abstract type="html">An optional block to execute once testing has finished.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/runTests:usingSeed:withCompletionBlock:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/setShouldWaitToStartTesting:</TokenIdentifier>
+			<Abstract type="html">Determines whether the controller should wait, after runTests:withCompletionBlock:
+is invoked, to start testing.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldWaitToStartTesting</Declaration>
+			
+			
+			<Anchor>//api/name/shouldWaitToStartTesting</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/shouldWaitToStartTesting</TokenIdentifier>
+			<Abstract type="html">Determines whether the controller should wait, after runTests:withCompletionBlock:
+is invoked, to start testing.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldWaitToStartTesting</Declaration>
+			
+			
+			<Anchor>//api/name/shouldWaitToStartTesting</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTestController/shouldWaitToStartTesting</TokenIdentifier>
+			<Abstract type="html">Determines whether the controller should wait, after runTests:withCompletionBlock:
+is invoked, to start testing.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldWaitToStartTesting</Declaration>
+			
+			
+			<Anchor>//api/name/shouldWaitToStartTesting</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/registerTarget:forAction:</TokenIdentifier>
+			<Abstract type="html">Allows application objects to register themselves as being able to perform
+arbitrary actions.</Abstract>
+			<DeclaredIn>SLTestController+AppHooks.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTestController/deregisterTarget:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)registerTarget:(id)target forAction:(SEL)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to which the action message will be sent.</Abstract>
+				</Parameter><Parameter>
+					<Name>action</Name>
+					<Abstract type="html">The message which will be sent to the target.
+It must take either no arguments, or one id-type value conforming to NSCopying.
+It must return either nothing, or an id-type value conforming to NSCopying.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerTarget:forAction:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/deregisterTarget:forAction:</TokenIdentifier>
+			<Abstract type="html">Deregisters the target for the specified actions.</Abstract>
+			<DeclaredIn>SLTestController+AppHooks.h</DeclaredIn>
+			
+			<Declaration>- (void)deregisterTarget:(id)target forAction:(SEL)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to be deregistered.</Abstract>
+				</Parameter><Parameter>
+					<Name>action</Name>
+					<Abstract type="html">The action message for which the target should be deregistered.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deregisterTarget:forAction:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/deregisterTarget:</TokenIdentifier>
+			<Abstract type="html">Deregisters the target for all actions.</Abstract>
+			<DeclaredIn>SLTestController+AppHooks.h</DeclaredIn>
+			
+			<Declaration>- (void)deregisterTarget:(id)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The object to be deregistered.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deregisterTarget:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/sendAction:</TokenIdentifier>
+			<Abstract type="html">Sends a specified action message to its registered target and returns the result of the message.</Abstract>
+			<DeclaredIn>SLTestController+AppHooks.h</DeclaredIn>
+			
+			<Declaration>- (id)sendAction:(SEL)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">The message to be performed.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The result of the action, if any; otherwise nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendAction:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/sendAction:withObject:</TokenIdentifier>
+			<Abstract type="html">Sends a specified action message to its registered target with an object as the argument,
+and returns the result of the message.</Abstract>
+			<DeclaredIn>SLTestController+AppHooks.h</DeclaredIn>
+			
+			<Declaration>- (id)sendAction:(SEL)action withObject:(id&lt;NSCopying&gt;)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">The message to be performed.</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">An object which is the sole argument of the action message.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The result of the action, if any; otherwise nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/sendAction:withObject:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

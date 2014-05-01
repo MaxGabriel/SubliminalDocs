@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SLKeyboard.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SLKeyboard</TokenIdentifier>
+			<Abstract type="html">The SLKeyboard protocol declares a standard way to interact with your application&apos;s
+input views, such as the standard keyboard (the SLKeyboard class) as well as
+(in iOS 7 and above) custom input views subclassing
+UIInputView.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SLKeyboard/keyboard</TokenIdentifier>
+			<Abstract type="html">Returns an element representing an instance of this input view.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)keyboard</Declaration>
+			
+			<ReturnValue><Abstract type="html">An element representing an instance of this input view.</Abstract></ReturnValue>
+			<Anchor>//api/name/keyboard</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SLKeyboard/typeString:</TokenIdentifier>
+			<Abstract type="html">Taps the keys of the specified input view as required
+to generate the specified string.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+			
+			<Declaration>- (void)typeString:(NSString *)string</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">The string to be typed using the input view.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/typeString:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SLKeyboard/hide</TokenIdentifier>
+			<Abstract type="html">Tap the keyboard&apos;s &quot;Hide Keyboard&quot; button to hide the keyboard without
+executing any done/submit actions.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+			
+			<Declaration>- (void)hide</Declaration>
+			
+			
+			<Anchor>//api/name/hide</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SLKeyboard/typeString:withSetValueFallbackUsingElement:</TokenIdentifier>
+			<Abstract type="html">Uses typeString: to tap the keys of the input string on the
+receiver; if that method throws an exception, this method will then
+send the setValue JavaScript message to the input element as a fallback.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+			
+			<Declaration>- (void)typeString:(NSString *)string withSetValueFallbackUsingElement:(SLUIAElement *)element</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">The string to be typed on the keyboard or set as the value for
+element.</Abstract>
+				</Parameter><Parameter>
+					<Name>element</Name>
+					<Abstract type="html">The user interface element on which the setValue JavaScript
+method will be called if the internal call to typeString:
+throws an exception.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/typeString:withSetValueFallbackUsingElement:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

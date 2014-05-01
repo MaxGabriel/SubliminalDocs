@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLKeyboard.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLKeyboard</TokenIdentifier>
+			<Abstract type="html">SLKeyboard allows you to test whether your application&apos;s standard keyboard
+is visible, and type strings.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLKeyboard/keyboard</TokenIdentifier>
+			<Abstract type="html">Returns an element representing the application&apos;s keyboard.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)keyboard</Declaration>
+			
+			<ReturnValue><Abstract type="html">An element representing the application&apos;s keyboard.</Abstract></ReturnValue>
+			<Anchor>//api/name/keyboard</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLKeyboard/typeString:</TokenIdentifier>
+			<Abstract type="html">Taps the keys of the specified keyboard as required
+to generate the specified string.</Abstract>
+			<DeclaredIn>SLKeyboard.h</DeclaredIn>
+			
+			<Declaration>- (void)typeString:(NSString *)string</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">The string to be typed on the keyboard.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/typeString:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

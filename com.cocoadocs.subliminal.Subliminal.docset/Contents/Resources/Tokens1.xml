@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLAlert.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLAlert</TokenIdentifier>
+			<Abstract type="html">The SLAlert class allows access to, and control of, alerts within your application.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLAlert/alertWithTitle:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an alert object that matches an alert view
+with the specified title.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)alertWithTitle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title of the alert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created alert object.</Abstract></ReturnValue>
+			<Anchor>//api/name/alertWithTitle:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLAlert/dismiss</TokenIdentifier>
+			<Abstract type="html">Creates and returns a handler that dismisses a matching alert using the default
+handling behavior.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>- (SLAlertDismissHandler *)dismiss</Declaration>
+			
+			<ReturnValue><Abstract type="html">A newly created handler that dismisses the corresponding alert using
+UIAutomation&apos;s default procedure.</Abstract></ReturnValue>
+			<Anchor>//api/name/dismiss</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLAlert/dismissWithButtonTitled:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a handler that dismisses a matching alert
+by tapping the button with the specified title.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>- (SLAlertDismissHandler *)dismissWithButtonTitled:(NSString *)buttonTitle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buttonTitle</Name>
+					<Abstract type="html">The title of the button to tap to dismiss the alert.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created handler that dismisses the corresponding alert by tapping
+the button with the specified title.</Abstract></ReturnValue>
+			<Anchor>//api/name/dismissWithButtonTitled:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLAlert/setText:ofFieldOfType:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a handler that sets the text of the specified text field
+of a matching alert to a specified value.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>- (SLAlertHandler *)setText:(NSString *)text ofFieldOfType:(SLAlertTextFieldType)fieldType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">The text to enter into the field.</Abstract>
+				</Parameter><Parameter>
+					<Name>fieldType</Name>
+					<Abstract type="html">The type of text field, corresponding to the alert&apos;s
+presentation style.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created handler that sets the text of the specified text field
+of a matching alert to a text.</Abstract></ReturnValue>
+			<Anchor>//api/name/setText:ofFieldOfType:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLAlert/isEqualToUIAAlertPredicate</TokenIdentifier>
+			<Abstract type="html">Returns the body of a JS function which
+evaluates a UIAAlert to see if it matches the receiver.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)isEqualToUIAAlertPredicate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The body of a JS function which evaluates a UIAAlert &quot;alert&quot;
+to see if it matches a particular SLAlert.</Abstract></ReturnValue>
+			<Anchor>//api/name/isEqualToUIAAlertPredicate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLAlert/dismissByUser</TokenIdentifier>
+			<Abstract type="html">Creates and returns a handler that relies on a user to dismiss an alert.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>- (SLAlertDismissHandler *)dismissByUser</Declaration>
+			
+			<ReturnValue><Abstract type="html">A newly created handler that does not dismiss the corresponding alert,
+but rather relies on a live user to dismiss the alert.</Abstract></ReturnValue>
+			<Anchor>//api/name/dismissByUser</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

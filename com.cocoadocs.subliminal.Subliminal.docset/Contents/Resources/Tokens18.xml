@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLTextField.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLTextField</TokenIdentifier>
+			<Abstract type="html">SLTextField matches instances of UITextField.</Abstract>
+			<DeclaredIn>SLTextField.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextField/setText:</TokenIdentifier>
+			<Abstract type="html">The text displayed by the text field.</Abstract>
+			<DeclaredIn>SLTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextField/text</TokenIdentifier>
+			<Abstract type="html">The text displayed by the text field.</Abstract>
+			<DeclaredIn>SLTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTextField/text</TokenIdentifier>
+			<Abstract type="html">The text displayed by the text field.</Abstract>
+			<DeclaredIn>SLTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextField/setText:withKeyboard:</TokenIdentifier>
+			<Abstract type="html">Type the text in the text field with a specific keyboard.</Abstract>
+			<DeclaredIn>SLTextField.h</DeclaredIn>
+			
+			<Declaration>- (void)setText:(NSString *)text withKeyboard:(id&lt;SLKeyboard&gt;)keyboard</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>text</Name>
+					<Abstract type="html">A string to type into the text field.</Abstract>
+				</Parameter><Parameter>
+					<Name>keyboard</Name>
+					<Abstract type="html">An SLElement that implements the SLKeyboard protocol,
+to be used to type the given string.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setText:withKeyboard:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextField/setDefaultKeyboard:</TokenIdentifier>
+			<Abstract type="html">The default keyboard to be used by setText: and setText:withKeyboard:.</Abstract>
+			<DeclaredIn>SLTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) id&lt;SLKeyboard&gt; defaultKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/defaultKeyboard</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTextField/defaultKeyboard</TokenIdentifier>
+			<Abstract type="html">The default keyboard to be used by setText: and setText:withKeyboard:.</Abstract>
+			<DeclaredIn>SLTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) id&lt;SLKeyboard&gt; defaultKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/defaultKeyboard</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTextField/defaultKeyboard</TokenIdentifier>
+			<Abstract type="html">The default keyboard to be used by setText: and setText:withKeyboard:.</Abstract>
+			<DeclaredIn>SLTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) id&lt;SLKeyboard&gt; defaultKeyboard</Declaration>
+			
+			
+			<Anchor>//api/name/defaultKeyboard</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

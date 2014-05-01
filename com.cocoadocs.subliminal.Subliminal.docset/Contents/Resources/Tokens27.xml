@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+SLVisibility.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(SLVisibility)</TokenIdentifier>
+			<Abstract type="html">The methods in the NSObject (SLVisibility) category allow Subliminal
+to determine if an object is visible on the screen.</Abstract>
+			<DeclaredIn>NSObject+SLVisibility.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/slAccessibilityIsVisible</TokenIdentifier>
+			<Abstract type="html">Determines if the specified object is visible on the screen.</Abstract>
+			<DeclaredIn>NSObject+SLVisibility.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)slAccessibilityIsVisible</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the receiver is visible within the accessibility hierarchy,
+NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/slAccessibilityIsVisible</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

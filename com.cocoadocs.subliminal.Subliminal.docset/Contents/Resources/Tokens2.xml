@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLAlertDismissHandler.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLAlertDismissHandler</TokenIdentifier>
+			<Abstract type="html">SLAlertDismissHandler is a class used solely to distinguish handlers
+that try to dismiss alerts from those that do not.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/addHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

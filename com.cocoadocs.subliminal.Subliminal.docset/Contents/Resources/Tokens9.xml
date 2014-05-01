@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLLogger.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLLogger</TokenIdentifier>
+			<Abstract type="html">The shared SLLogger used by Subliminal to log test progress. It may also be
+used by tests, and by the application itself, to log custom messages to the
+test output.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLLogger/sharedLogger</TokenIdentifier>
+			<Abstract type="html">The shared logger used by the Subliminal framework and by user-defined tests.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>+ (SLLogger *)sharedLogger</Declaration>
+			
+			<ReturnValue><Abstract type="html">The shared logger.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedLogger</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/loggingQueue</TokenIdentifier>
+			<Abstract type="html">Returns a queue on which log messages may be serialized.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (dispatch_queue_t)loggingQueue</Declaration>
+			
+			<ReturnValue><Abstract type="html">A custom serial dispatch queue on which to serialize log messages.</Abstract></ReturnValue>
+			<Anchor>//api/name/loggingQueue</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/currentQueueIsLoggingQueue</TokenIdentifier>
+			<Abstract type="html">Whether or not the current queue is the loggingQueue.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)currentQueueIsLoggingQueue</Declaration>
+			
+			<ReturnValue><Abstract type="html">Whether or not the current queue is the loggingQueue.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentQueueIsLoggingQueue</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logMessage:</TokenIdentifier>
+			<Abstract type="html">Logs a message.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logMessage:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The message to log.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logMessage:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logDebug:</TokenIdentifier>
+			<Abstract type="html">Logs a message as a &quot;debug&quot; message.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logDebug:(NSString *)debug</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>debug</Name>
+					<Abstract type="html">The message to log.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logDebug:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logWarning:</TokenIdentifier>
+			<Abstract type="html">Logs a message as a &quot;warning&quot; message.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logWarning:(NSString *)warning</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>warning</Name>
+					<Abstract type="html">The message to log.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logWarning:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logError:</TokenIdentifier>
+			<Abstract type="html">Logs a message as an &quot;error&quot; message.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logError:(NSString *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The message to log.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logError:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTestingStart</TokenIdentifier>
+			<Abstract type="html">Logs that testing has started.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logTestingStart</Declaration>
+			
+			
+			<Anchor>//api/name/logTestingStart</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTestStart:</TokenIdentifier>
+			<Abstract type="html">Logs that the specified test has started.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logTestStart:(NSString *)test</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>test</Name>
+					<Abstract type="html">The test that has started.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logTestStart:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTestFinish:withNumCasesExecuted:numCasesFailed:numCasesFailedUnexpectedly:</TokenIdentifier>
+			<Abstract type="html">Logs that the specified test has finished.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTestAbort:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)logTestFinish:(NSString *)test withNumCasesExecuted:(NSUInteger)numCasesExecuted numCasesFailed:(NSUInteger)numCasesFailed numCasesFailedUnexpectedly:(NSUInteger)numCasesFailedUnexpectedly</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>test</Name>
+					<Abstract type="html">The test that has finished.</Abstract>
+				</Parameter><Parameter>
+					<Name>numCasesExecuted</Name>
+					<Abstract type="html">The number of cases that were executed.</Abstract>
+				</Parameter><Parameter>
+					<Name>numCasesFailed</Name>
+					<Abstract type="html">Of numCasesExecuted, the number of cases that failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>numCasesFailedUnexpectedly</Name>
+					<Abstract type="html">Of numCasesFailed, the number of cases that failed unexpectedly
+(those test cases that failed for reasons other than test assertion failures).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logTestFinish:withNumCasesExecuted:numCasesFailed:numCasesFailedUnexpectedly:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTestAbort:</TokenIdentifier>
+			<Abstract type="html">Logs that the specified test has aborted.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTestFinish:withNumCasesExecuted:numCasesFailed:numCasesFailedUnexpectedly:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)logTestAbort:(NSString *)test</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>test</Name>
+					<Abstract type="html">The test that has aborted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logTestAbort:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTestingFinishWithNumTestsExecuted:numTestsFailed:</TokenIdentifier>
+			<Abstract type="html">Logs that testing has finished.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logTestingFinishWithNumTestsExecuted:(NSUInteger)numTestsExecuted numTestsFailed:(NSUInteger)numTestsFailed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>numTestsExecuted</Name>
+					<Abstract type="html">The number of tests that were executed.</Abstract>
+				</Parameter><Parameter>
+					<Name>numTestsFailed</Name>
+					<Abstract type="html">Of numTestsExecuted, the number of tests that failed
+(by throwing an exception in set-up, tear-down, or a test case).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logTestingFinishWithNumTestsExecuted:numTestsFailed:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logUncaughtException:</TokenIdentifier>
+			<Abstract type="html">Logs an exception that was not caught by the tests or application.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logUncaughtException:(NSException *)exception</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>exception</Name>
+					<Abstract type="html">The exception to be logged.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logUncaughtException:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logException:expected:</TokenIdentifier>
+			<Abstract type="html">Logs an exception thrown by a test.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logException:(NSException *)exception expected:(BOOL)expected</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>exception</Name>
+					<Abstract type="html">The exception to be logged.</Abstract>
+				</Parameter><Parameter>
+					<Name>expected</Name>
+					<Abstract type="html">YES if the exception was &quot;expected&quot;, otherwise NO.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logException:expected:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTest:caseStart:</TokenIdentifier>
+			<Abstract type="html">Logs that the specified test case has started.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logTest:(NSString *)test caseStart:(NSString *)testCase</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>test</Name>
+					<Abstract type="html">The test that is currently running.</Abstract>
+				</Parameter><Parameter>
+					<Name>testCase</Name>
+					<Abstract type="html">The test case that has started.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logTest:caseStart:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTest:casePass:</TokenIdentifier>
+			<Abstract type="html">Logs that the specified test case has passed.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logTest:(NSString *)test casePass:(NSString *)testCase</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>test</Name>
+					<Abstract type="html">The test that is currently running.</Abstract>
+				</Parameter><Parameter>
+					<Name>testCase</Name>
+					<Abstract type="html">The test case that has passed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logTest:casePass:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLLogger/logTest:caseFail:expected:</TokenIdentifier>
+			<Abstract type="html">Logs that the specified test case has failed.</Abstract>
+			<DeclaredIn>SLLogger.h</DeclaredIn>
+			
+			<Declaration>- (void)logTest:(NSString *)test caseFail:(NSString *)testCase expected:(BOOL)expected</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>test</Name>
+					<Abstract type="html">The test that is currently running.</Abstract>
+				</Parameter><Parameter>
+					<Name>testCase</Name>
+					<Abstract type="html">The test case that has failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>expected</Name>
+					<Abstract type="html">YES if the failure was &quot;expected&quot;, otherwise NO.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/logTest:caseFail:expected:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLPopover.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLPopover</TokenIdentifier>
+			<Abstract type="html">SLPopover provides methods for accessing and manipulating the current popover.</Abstract>
+			<DeclaredIn>SLPopover.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLPopover/currentPopover</TokenIdentifier>
+			<Abstract type="html">Returns an element representing the popover currently shown by the application,
+if any.</Abstract>
+			<DeclaredIn>SLPopover.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)currentPopover</Declaration>
+			
+			
+			<Anchor>//api/name/currentPopover</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLPopover/dismiss</TokenIdentifier>
+			<Abstract type="html">Dismisses the specified popover by tapping outside the popover
+and within the region defined for dismissal.</Abstract>
+			<DeclaredIn>SLPopover.h</DeclaredIn>
+			
+			<Declaration>- (void)dismiss</Declaration>
+			
+			
+			<Anchor>//api/name/dismiss</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

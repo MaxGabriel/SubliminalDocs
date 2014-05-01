@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLSwitch.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLSwitch</TokenIdentifier>
+			<Abstract type="html">SLSwitch matches against instances of UISwitch.</Abstract>
+			<DeclaredIn>SLSwitch.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLSwitch/setOn:</TokenIdentifier>
+			<Abstract type="html">The boolean value of the switch.</Abstract>
+			<DeclaredIn>SLSwitch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isOn) BOOL on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLSwitch/isOn</TokenIdentifier>
+			<Abstract type="html">The boolean value of the switch.</Abstract>
+			<DeclaredIn>SLSwitch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isOn) BOOL on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLSwitch/on</TokenIdentifier>
+			<Abstract type="html">The boolean value of the switch.</Abstract>
+			<DeclaredIn>SLSwitch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isOn) BOOL on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

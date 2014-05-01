@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLStatusBar.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLStatusBar</TokenIdentifier>
+			<Abstract type="html">The SLStatusBar allows you to tap on the application&apos;s status bar
+to scroll the scroll view to the top.</Abstract>
+			<DeclaredIn>SLStatusBar.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLStatusBar/statusBar</TokenIdentifier>
+			<Abstract type="html">Returns an element representing the application&apos;s status bar.</Abstract>
+			<DeclaredIn>SLStatusBar.h</DeclaredIn>
+			
+			<Declaration>+ (SLStatusBar *)statusBar</Declaration>
+			
+			<ReturnValue><Abstract type="html">An element representing the application&apos;s status bar.</Abstract></ReturnValue>
+			<Anchor>//api/name/statusBar</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

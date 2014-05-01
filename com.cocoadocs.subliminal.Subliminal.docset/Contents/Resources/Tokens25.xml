@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+SLAccessibilityDescription.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(SLAccessibilityDescription)</TokenIdentifier>
+			<Abstract type="html">The methods in the NSObject (SLAccessibilityDescription) category allow developers
+to examine the accessibility properties of objects within their application,
+for use in making their application accessible to disabled users and to
+Subliminal.</Abstract>
+			<DeclaredIn>NSObject+SLAccessibilityDescription.h</DeclaredIn>
+            
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/slAccessibilityDescription</TokenIdentifier>
+			<Abstract type="html">Returns a string that describes the receiver in terms of its accessibility properties.</Abstract>
+			<DeclaredIn>NSObject+SLAccessibilityDescription.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)slAccessibilityDescription</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string that describes the receiver in terms of its accessibility properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/slAccessibilityDescription</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/slRecursiveAccessibilityDescription</TokenIdentifier>
+			<Abstract type="html">Returns a string that recursively describes accessibility elements contained
+within the receiver.</Abstract>
+			<DeclaredIn>NSObject+SLAccessibilityDescription.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)slRecursiveAccessibilityDescription</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string that recursively describes the receiver and its accessibility
+children in terms of their accessibility properties.</Abstract></ReturnValue>
+			<Anchor>//api/name/slRecursiveAccessibilityDescription</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

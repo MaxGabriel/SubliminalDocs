@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLStaticElement.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLStaticElement</TokenIdentifier>
+			<Abstract type="html">Instances of SLStaticElement represent user interface elements
+which cannot be dynamically matched to elements within the element hierarchy,
+but which elements have well-defined (&quot;static&quot;) UIAutomation representations.</Abstract>
+			<DeclaredIn>SLStaticElement.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLStaticElement/initWithUIARepresentation:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a newly allocated element with the specified
+UIAutomation representation.</Abstract>
+			<DeclaredIn>SLStaticElement.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithUIARepresentation:(NSString *)UIARepresentation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>UIARepresentation</Name>
+					<Abstract type="html">The UIAutomation representation of the element,
+which identifies the element by its position within the element hierarchy.
+See the class description for more information.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized static element.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithUIARepresentation:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLStaticElement/setIsScrollView:</TokenIdentifier>
+			<Abstract type="html">Informs Subliminal that this element identifies an instance of UIScrollView.</Abstract>
+			<DeclaredIn>SLStaticElement.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isScrollView</Declaration>
+			
+			
+			<Anchor>//api/name/isScrollView</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLStaticElement/isScrollView</TokenIdentifier>
+			<Abstract type="html">Informs Subliminal that this element identifies an instance of UIScrollView.</Abstract>
+			<DeclaredIn>SLStaticElement.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isScrollView</Declaration>
+			
+			
+			<Anchor>//api/name/isScrollView</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLStaticElement/isScrollView</TokenIdentifier>
+			<Abstract type="html">Informs Subliminal that this element identifies an instance of UIScrollView.</Abstract>
+			<DeclaredIn>SLStaticElement.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isScrollView</Declaration>
+			
+			
+			<Anchor>//api/name/isScrollView</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

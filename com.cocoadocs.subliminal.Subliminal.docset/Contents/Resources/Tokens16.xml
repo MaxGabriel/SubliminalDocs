@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SLTest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SLTest</TokenIdentifier>
+			<Abstract type="html">SLTest is the abstract superclass of Subliminal integration tests.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLTest/allTests</TokenIdentifier>
+			<Abstract type="html">Returns all tests linked against the current target.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+			<Declaration>+ (NSSet *)allTests</Declaration>
+			
+			<ReturnValue><Abstract type="html">All tests (SLTest subclasses) linked against the current target.</Abstract></ReturnValue>
+			<Anchor>//api/name/allTests</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLTest/testNamed:</TokenIdentifier>
+			<Abstract type="html">Returns the SLTest subclass with the specified name.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+			<Declaration>+ (Class)testNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the test (SLTest subclass) to return.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The SLTest subclass with the specified name, or nil if no SLTest
+subclass with that name is linked against the current target.</Abstract></ReturnValue>
+			<Anchor>//api/name/testNamed:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLTest/isAbstract</TokenIdentifier>
+			<Abstract type="html">Returns YES if this class does not define test cases.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)isAbstract</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the class is without test cases, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/isAbstract</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLTest/supportsCurrentPlatform</TokenIdentifier>
+			<Abstract type="html">Returns YES if this test has at least one test case which can be run
+given the current device, screen, etc.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/SLTest/testCaseWithSelectorSupportsCurrentPlatform:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)supportsCurrentPlatform</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if this class has test cases that can currently run, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/supportsCurrentPlatform</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLTest/isFocused</TokenIdentifier>
+			<Abstract type="html">Returns YES if the test has at least one test case which is focused
+and which can run on the current platform.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTestController/runTests:usingSeed:withCompletionBlock:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)isFocused</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if any test cases are focused and can be run on the current platform,
+NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/isFocused</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLTest/runGroup</TokenIdentifier>
+			<Abstract type="html">Returns a value identifying the group of tests to which the receiver belongs.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTestController/runTests:usingSeed:withCompletionBlock:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (NSUInteger)runGroup</Declaration>
+			
+			<ReturnValue><Abstract type="html">A value identifying the group of tests to which the receiver belongs.
+The default implementation returns 1: all tests will be part of a single run group.</Abstract></ReturnValue>
+			<Anchor>//api/name/runGroup</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTest/runAndReportNumExecuted:failed:failedUnexpectedly:</TokenIdentifier>
+			<Abstract type="html">Runs all test cases defined on the receiver&apos;s class,
+and reports statistics about their execution.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)runAndReportNumExecuted:(NSUInteger *)numCasesExecuted failed:(NSUInteger *)numCasesFailed failedUnexpectedly:(NSUInteger *)numCasesFailedUnexpectedly</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>numCasesExecuted</Name>
+					<Abstract type="html">If this is non-NULL, on return, this will be set to
+the number of test cases that were executed--which will be the number of test
+cases defined by the receiver&apos;s class.</Abstract>
+				</Parameter><Parameter>
+					<Name>numCasesFailed</Name>
+					<Abstract type="html">If this is non-NULL, on return, this will be set to the
+number of test cases that failed (the number of test cases that threw exceptions).</Abstract>
+				</Parameter><Parameter>
+					<Name>numCasesFailedUnexpectedly</Name>
+					<Abstract type="html">If this is non-NULL, on return, this will
+be set to the number of test cases that failed unexpectedly (those test cases
+that threw exceptions for other reasons than test assertion failures).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the test successfully finished (all test cases were executed, regardless of their individual
+success or failure), NO otherwise (an exception occurred in test case set-up or tear-down ).</Abstract></ReturnValue>
+			<Anchor>//api/name/runAndReportNumExecuted:failed:failedUnexpectedly:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLTest/testCaseWithSelectorSupportsCurrentPlatform:</TokenIdentifier>
+			<Abstract type="html">Returns YES if this test case can be run given the current device, screen, etc.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/clm/SLTest/supportsCurrentPlatform</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>+ (BOOL)testCaseWithSelectorSupportsCurrentPlatform:(SEL)testCaseSelector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>testCaseSelector</Name>
+					<Abstract type="html">A selector identifying a test case.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the test case can be run, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/testCaseWithSelectorSupportsCurrentPlatform:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTest/setUpTest</TokenIdentifier>
+			<Abstract type="html">Called before any test cases are run.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTest/tearDownTest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setUpTest</Declaration>
+			
+			
+			<Anchor>//api/name/setUpTest</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTest/tearDownTest</TokenIdentifier>
+			<Abstract type="html">Called after all test cases are run.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTest/setUpTest</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)tearDownTest</Declaration>
+			
+			
+			<Anchor>//api/name/tearDownTest</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTest/setUpTestCaseWithSelector:</TokenIdentifier>
+			<Abstract type="html">Called before each test case is run.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTest/tearDownTestCaseWithSelector:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setUpTestCaseWithSelector:(SEL)testCaseSelector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>testCaseSelector</Name>
+					<Abstract type="html">The selector identifying the test case about to be run.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUpTestCaseWithSelector:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTest/tearDownTestCaseWithSelector:</TokenIdentifier>
+			<Abstract type="html">Called after each test case is run.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SLTest/setUpTestCaseWithSelector:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)tearDownTestCaseWithSelector:(SEL)testCaseSelector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>testCaseSelector</Name>
+					<Abstract type="html">The selector identifying the test case that was run.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/tearDownTestCaseWithSelector:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTest/wait:</TokenIdentifier>
+			<Abstract type="html">Suspends test execution for the specified time interval.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+			<Declaration>- (void)wait:(NSTimeInterval)interval</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>interval</Name>
+					<Abstract type="html">The time interval for which to wait.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/wait:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTest/recordLastKnownFile:line:</TokenIdentifier>
+			<Abstract type="html">Records a filename and line number to attach to an exception thrown at that
+source line.</Abstract>
+			<DeclaredIn>SLTest.h</DeclaredIn>
+			
+			<Declaration>- (void)recordLastKnownFile:(const char *)filename line:(int)lineNumber</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filename</Name>
+					<Abstract type="html">A filename, i.e. the last component of the FILE macro&apos;s expansion.</Abstract>
+				</Parameter><Parameter>
+					<Name>lineNumber</Name>
+					<Abstract type="html">A line number, i.e. the LINE macro&apos;s expansion.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/recordLastKnownFile:line:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

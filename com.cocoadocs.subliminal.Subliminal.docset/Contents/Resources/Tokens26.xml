@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+SLAccessibilityHierarchy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(SLAccessibilityHierarchy)</TokenIdentifier>
+			<Abstract type="html">The methods in the NSObject (SLAccessibilityHierarchy) category
+allow Subliminal and 3rd-party developers to examine the accessibility hierarchy
+--a subset of the hierarchy formed by views and the accessibility elements
+they vend.</Abstract>
+			<DeclaredIn>NSObject+SLAccessibilityHierarchy.h</DeclaredIn>
+            
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/willAppearInAccessibilityHierarchy</TokenIdentifier>
+			<Abstract type="html">Returns a Boolean value that indicates whether the receiver will appear
+in the accessibility hierarchy.</Abstract>
+			<DeclaredIn>NSObject+SLAccessibilityHierarchy.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)willAppearInAccessibilityHierarchy</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if the receiver will appear in the accessibility hierarchy,
+otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/willAppearInAccessibilityHierarchy</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/slAccessibilityParent</TokenIdentifier>
+			<Abstract type="html">Returns the SLAccessibility-specific accessibility container of the receiver.</Abstract>
+			<DeclaredIn>NSObject+SLAccessibilityHierarchy.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/NSObject/willAppearInAccessibilityHierarchy</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSObject *)slAccessibilityParent</Declaration>
+			
+			<ReturnValue><Abstract type="html">The object&apos;s superview, if it is a UIView;
+otherwise its accessibilityContainer, if it is a UIAccessibilityElement;
+otherwise nil.</Abstract></ReturnValue>
+			<Anchor>//api/name/slAccessibilityParent</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/slChildAccessibilityElementsFavoringSubviews:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an array of objects that are child accessibility elements
+of this object.</Abstract>
+			<DeclaredIn>NSObject+SLAccessibilityHierarchy.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/NSObject/willAppearInAccessibilityHierarchy</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSArray *)slChildAccessibilityElementsFavoringSubviews:(BOOL)favoringSubviews</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>favoringSubviews</Name>
+					<Abstract type="html">If YES, views should be placed before accessibility
+elements in the returned array; otherwise, they will be placed afterwards.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of objects that are child accessibility elements of this object.</Abstract></ReturnValue>
+			<Anchor>//api/name/slChildAccessibilityElementsFavoringSubviews:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/slIndexOfChildAccessibilityElement:favoringSubviews:</TokenIdentifier>
+			<Abstract type="html">Returns the index of the specified child element in the array of the
+child accessibility elements of the receiver.</Abstract>
+			<DeclaredIn>NSObject+SLAccessibilityHierarchy.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/NSObject/slChildAccessibilityElementsFavoringSubviews:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/NSObject/slAccessibilityParent</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSUInteger)slIndexOfChildAccessibilityElement:(NSObject *)childElement favoringSubviews:(BOOL)favoringSubviews</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>childElement</Name>
+					<Abstract type="html">A child accessibility element of the receiver.</Abstract>
+				</Parameter><Parameter>
+					<Name>favoringSubviews</Name>
+					<Abstract type="html">If YES, subviews should be ordered before
+accessibility elements among the receiver&apos;s child accessibility elements;
+otherwise, they will be ordered afterwards.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The index of the child element in the array of child accessibility
+elements of the receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/slIndexOfChildAccessibilityElement:favoringSubviews:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSObject/slChildAccessibilityElementAtIndex:favoringSubviews:</TokenIdentifier>
+			<Abstract type="html">Returns the child accessibility element of the receiver at the specified index.</Abstract>
+			<DeclaredIn>NSObject+SLAccessibilityHierarchy.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/NSObject/slChildAccessibilityElementsFavoringSubviews:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/NSObject/slAccessibilityParent</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSObject *)slChildAccessibilityElementAtIndex:(NSUInteger)index favoringSubviews:(BOOL)favoringSubviews</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>index</Name>
+					<Abstract type="html">The index of the child accessibility element to be returned.</Abstract>
+				</Parameter><Parameter>
+					<Name>favoringSubviews</Name>
+					<Abstract type="html">If YES, subviews should be ordered before
+accessibility elements among the receiver&apos;s child accessibility elements;
+otherwise, they will be ordered afterwards.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The child accessibility element at the specified index in the array
+of the child accessibility elements of the receiver.</Abstract></ReturnValue>
+			<Anchor>//api/name/slChildAccessibilityElementAtIndex:favoringSubviews:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
