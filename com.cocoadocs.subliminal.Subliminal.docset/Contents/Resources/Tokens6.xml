@@ -146,6 +146,42 @@ return YES if the element matches the object, otherwise NO.</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLElement/matchesObject:</TokenIdentifier>
+			<Abstract type="html">Determines if the specified element matches the specified object.</Abstract>
+			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)matchesObject:(NSObject *)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object to which the instance of SLElement should be compared.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the specified element matches object, NO otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/matchesObject:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLElement/examineMatchingObject:</TokenIdentifier>
+			<Abstract type="html">Allows the caller to interact with the actual object matched by the specified
+SLElement.</Abstract>
+			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
+			
+			<Declaration>- (void)examineMatchingObject:(void ( ^ ) ( NSObject *object ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block which takes the matching object as an argument and returns
+void.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/examineMatchingObject:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SLElement/setShouldDoubleCheckValidity:</TokenIdentifier>
 			<Abstract type="html">Determines whether the specified element should use UIAutomation to confirm that it is valid
 after Subliminal has determined (to the best of its ability) that it is valid.</Abstract>
@@ -181,42 +217,6 @@ after Subliminal has determined (to the best of its ability) that it is valid.</
 			
 			
 			<Anchor>//api/name/shouldDoubleCheckValidity</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SLElement/matchesObject:</TokenIdentifier>
-			<Abstract type="html">Determines if the specified element matches the specified object.</Abstract>
-			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
-			
-			<Declaration>- (BOOL)matchesObject:(NSObject *)object</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>object</Name>
-					<Abstract type="html">The object to which the instance of SLElement should be compared.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">YES if the specified element matches object, NO otherwise.</Abstract></ReturnValue>
-			<Anchor>//api/name/matchesObject:</Anchor>
-            <NodeRef refid="6"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SLElement/examineMatchingObject:</TokenIdentifier>
-			<Abstract type="html">Allows the caller to interact with the actual object matched by the specified
-SLElement.</Abstract>
-			<DeclaredIn>SLUIAElement+Subclassing.h</DeclaredIn>
-			
-			<Declaration>- (void)examineMatchingObject:(void ( ^ ) ( NSObject *object ))block</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>block</Name>
-					<Abstract type="html">A block which takes the matching object as an argument and returns
-void.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/examineMatchingObject:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

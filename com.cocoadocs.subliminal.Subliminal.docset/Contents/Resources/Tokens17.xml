@@ -107,45 +107,6 @@ If SLTestControllerRandomSeed is passed, the test controller will choose a seed.
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/setShouldWaitToStartTesting:</TokenIdentifier>
-			<Abstract type="html">Determines whether the controller should wait, after runTests:withCompletionBlock:
-is invoked, to start testing.</Abstract>
-			<DeclaredIn>SLTestController.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) BOOL shouldWaitToStartTesting</Declaration>
-			
-			
-			<Anchor>//api/name/shouldWaitToStartTesting</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/shouldWaitToStartTesting</TokenIdentifier>
-			<Abstract type="html">Determines whether the controller should wait, after runTests:withCompletionBlock:
-is invoked, to start testing.</Abstract>
-			<DeclaredIn>SLTestController.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) BOOL shouldWaitToStartTesting</Declaration>
-			
-			
-			<Anchor>//api/name/shouldWaitToStartTesting</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SLTestController/shouldWaitToStartTesting</TokenIdentifier>
-			<Abstract type="html">Determines whether the controller should wait, after runTests:withCompletionBlock:
-is invoked, to start testing.</Abstract>
-			<DeclaredIn>SLTestController.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) BOOL shouldWaitToStartTesting</Declaration>
-			
-			
-			<Anchor>//api/name/shouldWaitToStartTesting</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/registerTarget:forAction:</TokenIdentifier>
 			<Abstract type="html">Allows application objects to register themselves as being able to perform
 arbitrary actions.</Abstract>
@@ -245,6 +206,45 @@ and returns the result of the message.</Abstract>
 			</Parameters>
 			<ReturnValue><Abstract type="html">The result of the action, if any; otherwise nil.</Abstract></ReturnValue>
 			<Anchor>//api/name/sendAction:withObject:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/setShouldWaitToStartTesting:</TokenIdentifier>
+			<Abstract type="html">Determines whether the controller should wait, after runTests:withCompletionBlock:
+is invoked, to start testing.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldWaitToStartTesting</Declaration>
+			
+			
+			<Anchor>//api/name/shouldWaitToStartTesting</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTestController/shouldWaitToStartTesting</TokenIdentifier>
+			<Abstract type="html">Determines whether the controller should wait, after runTests:withCompletionBlock:
+is invoked, to start testing.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldWaitToStartTesting</Declaration>
+			
+			
+			<Anchor>//api/name/shouldWaitToStartTesting</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTestController/shouldWaitToStartTesting</TokenIdentifier>
+			<Abstract type="html">Determines whether the controller should wait, after runTests:withCompletionBlock:
+is invoked, to start testing.</Abstract>
+			<DeclaredIn>SLTestController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldWaitToStartTesting</Declaration>
+			
+			
+			<Anchor>//api/name/shouldWaitToStartTesting</Anchor>
             <NodeRef refid="17"/>
 		</Token>
 		

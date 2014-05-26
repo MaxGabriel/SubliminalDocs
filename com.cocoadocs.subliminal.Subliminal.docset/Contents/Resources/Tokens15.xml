@@ -78,42 +78,6 @@ See eval: for more information.</Abstract></ReturnValue>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/setScriptLoggingEnabled:</TokenIdentifier>
-			<Abstract type="html">Determines whether the terminal will log scripts as it evaluates them.</Abstract>
-			<DeclaredIn>SLTerminal.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) BOOL scriptLoggingEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/scriptLoggingEnabled</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/scriptLoggingEnabled</TokenIdentifier>
-			<Abstract type="html">Determines whether the terminal will log scripts as it evaluates them.</Abstract>
-			<DeclaredIn>SLTerminal.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) BOOL scriptLoggingEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/scriptLoggingEnabled</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SLTerminal/scriptLoggingEnabled</TokenIdentifier>
-			<Abstract type="html">Determines whether the terminal will log scripts as it evaluates them.</Abstract>
-			<DeclaredIn>SLTerminal.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic) BOOL scriptLoggingEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/scriptLoggingEnabled</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/loadFunctionWithName:params:body:</TokenIdentifier>
 			<Abstract type="html">Adds the JavaScript function with the specified description to the terminal&apos;s
 namespace.</Abstract>
@@ -263,6 +227,42 @@ to evaluate to true, given the specified arguments, within a specified timeout.<
 			<ReturnValue><Abstract type="html">YES if and when the function evaluates to true within the timeout;
 otherwise, NO.</Abstract></ReturnValue>
 			<Anchor>//api/name/waitUntilFunctionWithNameIsTrue:whenEvaluatedWithArgs:retryDelay:timeout:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/setScriptLoggingEnabled:</TokenIdentifier>
+			<Abstract type="html">Determines whether the terminal will log scripts as it evaluates them.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL scriptLoggingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/scriptLoggingEnabled</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLTerminal/scriptLoggingEnabled</TokenIdentifier>
+			<Abstract type="html">Determines whether the terminal will log scripts as it evaluates them.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL scriptLoggingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/scriptLoggingEnabled</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SLTerminal/scriptLoggingEnabled</TokenIdentifier>
+			<Abstract type="html">Determines whether the terminal will log scripts as it evaluates them.</Abstract>
+			<DeclaredIn>SLTerminal.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL scriptLoggingEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/scriptLoggingEnabled</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		

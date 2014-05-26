@@ -1,18 +1,18 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://cocoadocs.org/docsets/Subliminal/xcode-docset.atom/20140430202244</id>
+    <id>http://cocoadocs.org/docsets/Subliminal/xcode-docset.atom/20140526162453</id>
     <title type="text">Subliminal</title>
     <rights>Copyright © 2014 Jeff Wear. All rights reserved.</rights>
     <link rel="self" href="http://cocoadocs.org/docsets/Subliminal/xcode-docset.atom"></link>
     <docset:publisherName>Jeff Wear</docset:publisherName>
     <docset:publisherID>com.cocoadocs.subliminal.documentation</docset:publisherID>
-    <updated>2014-04-30T20:22:44-07:00</updated>
+    <updated>2014-05-26T16:24:53-07:00</updated>
     <entry>
-        <id>tag:cocoadocs.org,2014-04-30:com.cocoadocs.subliminal.Subliminal/1.1.0</id>
+        <id>tag:cocoadocs.org,2014-05-26:com.cocoadocs.subliminal.Subliminal/1.1.0</id>
         <title type="text">Subliminal Documentation</title>
-        <updated>2014-04-30T20:22:44-07:00</updated>
+        <updated>2014-05-26T16:24:53-07:00</updated>
         <content type="text">Subliminal Documentation (v1.1.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http://cocoadocs.org/docsets/Subliminal/docset.xar" length="630680"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http://cocoadocs.org/docsets/Subliminal/docset.xar" length="821435"></link>
         <docset:identifier>com.cocoadocs.subliminal.Subliminal</docset:identifier>
         <docset:version>1.1.0</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>

@@ -87,6 +87,19 @@ of a matching alert to a text.</Abstract></ReturnValue>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SLAlert/dismissByUser</TokenIdentifier>
+			<Abstract type="html">Creates and returns a handler that relies on a user to dismiss an alert.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>- (SLAlertDismissHandler *)dismissByUser</Declaration>
+			
+			<ReturnValue><Abstract type="html">A newly created handler that does not dismiss the corresponding alert,
+but rather relies on a live user to dismiss the alert.</Abstract></ReturnValue>
+			<Anchor>//api/name/dismissByUser</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/SLAlert/isEqualToUIAAlertPredicate</TokenIdentifier>
 			<Abstract type="html">Returns the body of a JS function which
 evaluates a UIAAlert to see if it matches the receiver.</Abstract>
@@ -97,19 +110,6 @@ evaluates a UIAAlert to see if it matches the receiver.</Abstract>
 			<ReturnValue><Abstract type="html">The body of a JS function which evaluates a UIAAlert &quot;alert&quot;
 to see if it matches a particular SLAlert.</Abstract></ReturnValue>
 			<Anchor>//api/name/isEqualToUIAAlertPredicate</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SLAlert/dismissByUser</TokenIdentifier>
-			<Abstract type="html">Creates and returns a handler that relies on a user to dismiss an alert.</Abstract>
-			<DeclaredIn>SLAlert.h</DeclaredIn>
-			
-			<Declaration>- (SLAlertDismissHandler *)dismissByUser</Declaration>
-			
-			<ReturnValue><Abstract type="html">A newly created handler that does not dismiss the corresponding alert,
-but rather relies on a live user to dismiss the alert.</Abstract></ReturnValue>
-			<Anchor>//api/name/dismissByUser</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		

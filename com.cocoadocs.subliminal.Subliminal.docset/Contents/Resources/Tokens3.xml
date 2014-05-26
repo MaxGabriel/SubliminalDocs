@@ -87,18 +87,6 @@ and then the action of nextHandler.</Abstract></ReturnValue>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/loadUIAAlertHandling</TokenIdentifier>
-			<Abstract type="html">Loads Subliminal&apos;s alert-handling mechanism into UIAutomation.</Abstract>
-			<DeclaredIn>SLAlert.h</DeclaredIn>
-			
-			<Declaration>+ (void)loadUIAAlertHandling</Declaration>
-			
-			
-			<Anchor>//api/name/loadUIAAlertHandling</Anchor>
-            <NodeRef refid="3"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/setLoggingEnabled:</TokenIdentifier>
 			<Abstract type="html">Enables or disables alert-handling logging.</Abstract>
 			<DeclaredIn>SLAlert.h</DeclaredIn>
@@ -130,6 +118,18 @@ otherwise, alert-handling logging is disabled.</Abstract>
 			
 			<ReturnValue><Abstract type="html">YES if alert-handling logging is enabled, NO otherwise.</Abstract></ReturnValue>
 			<Anchor>//api/name/loggingEnabled</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SLAlertHandler/loadUIAAlertHandling</TokenIdentifier>
+			<Abstract type="html">Loads Subliminal&apos;s alert-handling mechanism into UIAutomation.</Abstract>
+			<DeclaredIn>SLAlert.h</DeclaredIn>
+			
+			<Declaration>+ (void)loadUIAAlertHandling</Declaration>
+			
+			
+			<Anchor>//api/name/loadUIAAlertHandling</Anchor>
             <NodeRef refid="3"/>
 		</Token>
 		
